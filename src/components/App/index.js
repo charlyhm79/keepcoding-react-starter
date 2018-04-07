@@ -1,15 +1,23 @@
 import React from 'react';
-import './index.css';
+import styled from 'styled-components';
 
 import Header from '../Header';
 
+const StyledApp = styled.div`
+  text-align: center;
+`;
+
+const StyledIntro = styled.p`
+  font-size: large;
+`;
+
 const App = () => (
-  <div className="App">
+  <StyledApp>
     <Header title="KeepCoding React Starter" />
-    <p className="App-intro">
+    <StyledIntro>
       To get started, edit <code>src/App.js</code> and save to reload.
-    </p>
-  </div>
+    </StyledIntro>
+  </StyledApp>
 );
 
 export default App;

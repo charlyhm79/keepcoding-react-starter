@@ -1,6 +1,7 @@
 {
   "extends": ["react-app", "airbnb"],
   "rules": {
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }]
   }
 }

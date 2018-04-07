@@ -1,14 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import './index.css';
-import logo from './logo.svg';
+import Logo from '../Logo';
+
+const StyledHeader = styled.header`
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+`;
+
+const StyledHeading = styled.h1`
+  font-size: 1.5em;
+`;
 
 const Header = ({ title }) => (
-  <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
-    <h1 className="App-title">{title}</h1>
-  </header>
+  <StyledHeader>
+    <Logo />
+    <StyledHeading>{title}</StyledHeading>
+  </StyledHeader>
 );
 
 Header.propTypes = {
