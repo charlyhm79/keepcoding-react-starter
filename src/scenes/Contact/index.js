@@ -26,9 +26,9 @@ const Contact = ({ match }) => (
       <ContactData />
     </StyledCol>
     <StyledCol>
-      <Route exact path={`${match.url}`} component={() => <Redirect to={`${match.url}/map`} />} />
-      <Route path={`${match.url}/map`} component={ContactMap} />
-      <Route path={`${match.url}/form`} component={ContactForm} />
+      <Route exact path={`${match.path}`} component={() => <Redirect to={`${match.path}/map`} />} />
+      <Route path={`${match.path}/map`} component={ContactMap} />
+      <Route path={`${match.path}/form`} component={ContactForm} />
     </StyledCol>
   </StyledWrapper>
 );
