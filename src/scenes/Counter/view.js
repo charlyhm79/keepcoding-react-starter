@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const StyledWrapper = styled.div`
+import { Button, ButtonGroup, ContentWrapper } from '../../components';
+
+const StyledWrapper = styled(ContentWrapper)`
   border: 2px solid #0066cc;
   display: flex;
   justify-content: space-between;
@@ -13,29 +15,19 @@ const StyledMessage = styled.p`
   padding: 10px;
 `;
 
-const StyledButtonGroup = styled.div`
-  display: flex;
-`;
-
-const StyledButton = styled.button`
-  background: #0066cc;
-  font-size: 1.4rem;
-  color: #fff;
-  opacity: ${props => (props.disabled ? 0.4 : 1)};
-  cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
-`;
-
 const CounterView = ({
   title, resetEnabled, handleReset, handleClick,
 }) => (
   <StyledWrapper>
     <StyledMessage>{title}</StyledMessage>
-    <StyledButtonGroup>
-      <StyledButton disabled={!resetEnabled} onClick={handleReset}>
+    <ButtonGroup>
+      <Button danger disabled={!resetEnabled} onClick={handleReset}>
         Reset
-      </StyledButton>
-      <StyledButton onClick={handleClick}>Add!</StyledButton>
-    </StyledButtonGroup>
+      </Button>
+      <Button primary onClick={handleClick}>
+        Add!
+      </Button>
+    </ButtonGroup>
   </StyledWrapper>
 );
 

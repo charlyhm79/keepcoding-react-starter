@@ -2,23 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Logo from '../Logo';
+import Brand from './components/Brand';
+import Links from './components/Links';
 
 const StyledHeader = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
 `;
 
-const StyledHeading = styled.h1`
-  font-size: 1.5em;
-`;
-
 const Header = ({ title }) => (
   <StyledHeader>
-    <Logo />
-    <StyledHeading>{title}</StyledHeading>
+    <Brand title={title} />
+    <Links />
   </StyledHeader>
 );
 

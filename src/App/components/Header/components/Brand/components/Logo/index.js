@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import logoFile from './logo.svg';
 
@@ -17,6 +18,10 @@ const StyledLogo = styled.img`
   height: 80px;
 `;
 
-const Logo = () => <StyledLogo src={logoFile} alt="" />;
+const Logo = () => (
+  <Link to="/">
+    <StyledLogo src={logoFile} alt="" />
+  </Link>
+);
 
 export default Logo;
