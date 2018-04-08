@@ -2,21 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Header from '../Header';
+import Counter from '../Counter';
 
 const StyledApp = styled.div`
   text-align: center;
 `;
 
-const StyledIntro = styled.p`
-  font-size: large;
+const StyledContent = styled.div`
+  max-width: 600px;
+  margin: 20vh auto;
 `;
 
 const App = () => (
   <StyledApp>
     <Header title="KeepCoding React Starter" />
-    <StyledIntro>
-      To get started, edit <code>src/App.js</code> and save to reload.
-    </StyledIntro>
+    <StyledContent>
+      <Counter />
+    </StyledContent>
   </StyledApp>
 );
 
