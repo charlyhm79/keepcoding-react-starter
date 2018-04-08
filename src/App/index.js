@@ -3,8 +3,7 @@ import styled, { injectGlobal } from 'styled-components';
 import { normalize, fontFace } from 'polished';
 import { BrowserRouter } from 'react-router-dom';
 
-import Header from './components/Header';
-import Content from './components/Content';
+import { Header, Content } from './components';
 
 injectGlobal`
   ${normalize()};
