@@ -5,16 +5,22 @@ import PropTypes from 'prop-types';
 import styledMap from 'styled-map';
 import { Link } from 'react-router-dom';
 
+import { theme } from '../../constants';
+
+const DEFAULT_OPACITY = 1;
+
+export const getHalf = v => v / 2;
+
 const StyledButton = styled.button`
   background: ${styledMap({
-    primary: '#0066cc',
-    danger: '#ff0000',
+    primary: theme.colors.primary,
+    danger: theme.colors.danger,
     default: '#7b7b7b',
   })};
   color: #fff;
   opacity: ${styledMap({
-    disabled: 0.4,
-    default: 1,
+    disabled: getHalf(DEFAULT_OPACITY),
+    default: DEFAULT_OPACITY,
   })};
   cursor: ${styledMap({
     disabled: 'not-allowed',

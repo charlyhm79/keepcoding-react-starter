@@ -2,8 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { theme } from '../../../../constants';
+
 const StyledNav = styled.nav`
-  background: #0066cc;
+  background: ${theme.colors.primary};
   padding: 10px 20px;
 `;
 
