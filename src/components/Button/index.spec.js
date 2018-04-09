@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
 import Button, { getHalf } from './';
 
 describe('Button test suite', () => {
@@ -15,5 +16,10 @@ describe('Button test suite', () => {
     expect(getHalf(-1)).toBe(-0.5);
     expect(getHalf(10)).toBe(5);
     expect(getHalf(1000)).toBe(500);
+  });
+
+  it('Matchs snapshot', () => {
+    const tree = renderer.create(<Button />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matchs snapshot 1`] = `
+<div
+  className="sc-ifAKCX haxXVA sc-bxivhb fYKwXF"
+>
+  <p
+    className="sc-EHOje iMmpZp"
+  >
+    El contador está vacío
+  </p>
+  <div
+    className="sc-htpNat cixthU"
+  >
+    <button
+      className="sc-bdVaJa bqVjqO"
+      disabled={true}
+      onClick={[Function]}
+      to={undefined}
+    >
+      Reset
+    </button>
+    <button
+      className="sc-bdVaJa hpXSGV"
+      onClick={[Function]}
+      to={undefined}
+    >
+      Add!
+    </button>
+  </div>
+</div>
+`;

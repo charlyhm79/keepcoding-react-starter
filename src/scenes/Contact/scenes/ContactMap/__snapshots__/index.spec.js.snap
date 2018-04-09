@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matchs snapshot 1`] = `
+<img
+  alt="contact map"
+  className="sc-bdVaJa UoSJW"
+  src="http://is5.mzstatic.com/image/thumb/Purple30/v4/1f/42/cb/1f42cbf2-1d83-a356-00db-8edcc0598ff2/source/552x414bb.jpg"
+/>
+`;

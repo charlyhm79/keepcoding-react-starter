@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matchs snapshot 1`] = `
+<nav
+  className="sc-bdVaJa iJALVg"
+>
+  <a
+    aria-current={false}
+    className="sc-bwzfXH esoLgg"
+    href="/undefined/map"
+    onClick={[Function]}
+    style={undefined}
+  >
+    Mapa
+  </a>
+  <a
+    aria-current={false}
+    className="sc-bwzfXH esoLgg"
+    href="/undefined/form"
+    onClick={[Function]}
+    style={undefined}
+  >
+    Formulario de contacto
+  </a>
+</nav>
+`;

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matchs snapshot 1`] = `
+<header
+  className="sc-EHOje MNHeC"
+>
+  <div
+    className="sc-bwzfXH fNOhzS"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        className="sc-bdVaJa cruMCr"
+        src="logo.svg"
+      />
+    </a>
+    <h1
+      className="sc-htpNat fuQaVv"
+    >
+      Test
+    </h1>
+  </div>
+  <nav
+    className="sc-bxivhb bUZGRr"
+  >
+    <a
+      className="sc-ifAKCX bjPxbs"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="sc-ifAKCX bjPxbs"
+      href="/counter"
+      onClick={[Function]}
+    >
+      Contador
+    </a>
+    <a
+      className="sc-ifAKCX bjPxbs"
+      href="/contact"
+      onClick={[Function]}
+    >
+      Contacto
+    </a>
+  </nav>
+</header>
+`;

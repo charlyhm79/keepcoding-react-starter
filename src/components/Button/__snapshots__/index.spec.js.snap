@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test suite Matchs snapshot 1`] = `
+<button
+  className="sc-bdVaJa gAwOrD"
+  to={undefined}
+/>
+`;

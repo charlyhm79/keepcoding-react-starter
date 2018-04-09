@@ -2,12 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { StaticRouter } from 'react-router-dom';
-
-import Header from './';
+import Content from './';
 
 const Component = (
   <StaticRouter context={{}}>
-    <Header title="Test" />
+    <Content match={{ to: 'foo' }} />
   </StaticRouter>
 );
 

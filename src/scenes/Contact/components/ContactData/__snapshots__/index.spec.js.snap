@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matchs snapshot 1`] = `
+<div
+  className="sc-bdVaJa XFGyz"
+>
+  <p
+    className="sc-bwzfXH eNWKUP"
+  >
+    <strong>
+      Nombre:
+    </strong>
+     Eric Weber
+  </p>
+  <p
+    className="sc-bwzfXH eNWKUP"
+  >
+    <strong>
+      Dirección:
+    </strong>
+     402 Price Lake, Kimberlyshire, WI 38712-1501
+  </p>
+  <p
+    className="sc-bwzfXH eNWKUP"
+  >
+    <strong>
+      Teléfono:
+    </strong>
+     (912) 526-5410 x4550
+  </p>
+  <p
+    className="sc-bwzfXH eNWKUP"
+  >
+    <strong>
+      Email:
+    </strong>
+     Eric_Weber@gmail.com
+  </p>
+</div>
+`;

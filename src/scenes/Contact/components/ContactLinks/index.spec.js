@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { StaticRouter } from 'react-router-dom';
 
-import Header from './';
+import ContactLinks from './';
 
 const Component = (
   <StaticRouter context={{}}>
-    <Header title="Test" />
+    <ContactLinks match={{ to: 'foo' }} />
   </StaticRouter>
 );
 
